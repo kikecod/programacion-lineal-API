@@ -5,7 +5,7 @@ from passlib.context import CryptContext
 import os
 
 # Database Configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:Hi-alsoWm24@localhost/linear_programming_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://kikecode:kNYNI94P3USDd4bZPxOuAXolMNH9YweI@dpg-ct8cist6l47c73dj2av0-a.oregon-postgres.render.com/linear_programming_db")
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
